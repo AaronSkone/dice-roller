@@ -1,12 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <titleDice Roller</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice Roller</title>
 </head>
-<body>
-	<h1>Dice Roller</h1>
-	
+<body onload="rollDice()">
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <p>Click the "Roll" button or press Enter to roll the dice.</p>
+        
+        <div class="dice-container">
+            <label for="diceResult">Dice Result:</label>
+            <input type="text" id="diceResult" readonly>
+        </div>
+
+        <button id="rollButton" onclick="rollDice()">Roll</button>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>
